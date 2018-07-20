@@ -1,4 +1,6 @@
-# A scalable Keras + deep learning REST API
+# A scalable Deep learning REST API
+
+Deploy machine learning model as a web service API
 
 Stack: 
 - Keras
@@ -27,5 +29,3 @@ Stack:
     source ./venv/bin/activate        # activate env
     pip install -r requirements.txt   # install packages
     ```
-
-3. 
