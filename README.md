@@ -29,3 +29,51 @@ Stack:
     source ./venv/bin/activate        # activate env
     pip install -r requirements.txt   # install packages
     ```
+
+3. Run the worker model
+
+    ```
+    python worker.py
+    ```
+
+4. Open another terminal, start the web server
+
+    ```
+    python server.py
+    ```
+
+4. Using cURL to test the api /predict
+
+    ```
+    curl -X POST http://localhost:5000/predict \
+         -F 'image=@file.png'
+    ```
+
+    It's will show you the output like this:
+    ```
+    {
+        "predictions": [
+            {
+                "label": "web_site",
+                "probability": 0.8858472108840942
+            },
+            {
+                "label": "bow_tie",
+                "probability": 0.06905359774827957
+            },
+            {
+                "label": "laptop",
+                "probability": 0.015353902243077755
+            },
+            {
+                "label": "monitor",
+                "probability": 0.005411265417933464
+            },
+            {
+                "label": "notebook",
+                "probability": 0.0035434039309620857
+            }
+        ],
+        "success": true
+    }
+    ```
