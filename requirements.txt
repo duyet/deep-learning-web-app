@@ -1,0 +1,11 @@
+numpy
+scipy
+h5py
+tensorflow
+keras
+flask
+gevent
+imutils
+requests
+redis
+Pillow
