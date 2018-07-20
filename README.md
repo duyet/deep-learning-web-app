@@ -3,10 +3,13 @@
 Deploy machine learning model as a web service API
 
 Stack: 
-- Keras
-- Redis (an in-memory data structure store)
-- Flask (a micro web framework for Python)
-- Message queuing and message broker programming paradigms
+- Keras: Machine learning
+- Redis: an in-memory data structure store
+- Flask: a micro web framework for Python
+
+Workflow:
+
+![Workflow](deep-learning-web-app.jpg)
 
 # Installation 
 
