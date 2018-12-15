@@ -80,3 +80,14 @@ Workflow:
         "success": true
     }
     ```
+
+# Docker
+
+```
+docker-compose up
+```
+
+![](.screenshot/docker.png)
+
+Visit: http://localhost:8000/predict
+![](.screenshot/screenshot.png)

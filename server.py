@@ -11,6 +11,7 @@ import uuid
 import time
 import json
 import io
+import os
 
 # initialize our Flask application and Redis server
 app = flask.Flask(__name__)
@@ -96,5 +97,9 @@ def predict():
 # for debugging purposes, it's helpful to start the Flask testing
 # server (don't use this for production
 if __name__ == "__main__":
-	print("* Starting web service...")
-	app.run()
+	PORT = os.getenv("PORT", 8000)
+	HOST = os.getenv("HOST", "0.0.0.0")
+	print("* Starting web service at http://{host}:{port}...".format(host=HOST, port=PORT))
+	app.run(host=HOST, port=PORT)
+
+
