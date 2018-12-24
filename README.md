@@ -91,3 +91,7 @@ docker-compose up
 
 Visit: http://localhost:8000/predict
 ![](.screenshot/screenshot.png)
+
+Test with Postman
+![](.screenshot/postman.png)
+
